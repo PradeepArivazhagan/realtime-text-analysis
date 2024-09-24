@@ -1,0 +1,156 @@
+*{
+  font-family: Inter;
+  box-sizing: border-box;
+}
+.main-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F5F5;
+}
+
+.editor-container{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-area{
+  width: 100%;
+  font-size: 15px;
+  padding: 20px 20px 45px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.analysis-container{
+  background-color: white;
+  padding: 5px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 38px;
+  position: absolute;
+  top: 68vh;
+  left: 30vw;
+  right: 30vw;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.count-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.vl {
+  border-left: 2px solid #42424229;
+  height: 50px;
+}
+
+.count-type{
+  font-size: 14px;
+  color: #229799;
+  margin: 0px 0px 0px 0px;
+}
+
+.count{
+  font-size: 13px;
+  color: #424242;
+  margin:8px 0px 0px 0px;
+  font-weight: 700;
+}
+
+.replace-container{
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.replace-input{
+  padding: 10px;
+  outline: none;
+  border-radius: 3px;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.09);
+}
+
+.icon-container{
+  color: #424242;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.replace-btn{
+  padding: 11px 16px;
+  background-color: #229799;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+  .editor-container{
+    width: 80%;
+  }
+  .analysis-container{
+    top: 70vh;
+    padding: 0px 25px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .text-area{
+    height: 50vh;
+  }
+  .editor-container{
+    width: 90%;
+  }
+  .analysis-container{
+    padding: 0px 20px;
+    top: 52vh;
+    left: 10vw;
+    right: 10vw;
+  }
+  .icon-container{
+    width: 25px;
+    transform: rotate(90deg);
+  }
+  .replace-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .replace-btn{
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+
+.replace-word{
+  background-color: rgba(255, 255, 0, 0.344);
+}
